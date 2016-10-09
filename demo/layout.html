@@ -1,0 +1,264 @@
+﻿<!doctype html>
+<html>
+<head>
+
+  <title>at-core-style classes demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../tangere/tangere.html">
+  <link rel="import" href="../../paper-styles/demo-pages.html">
+  <link rel="import" href="../../at-doc-snippet/at-doc-snippet.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  
+  <style is="custom-style" include="demo-pages-shared-styles">
+    at-doc-snippet {
+      --at-doc-snippet-demo: {
+        padding: 0;
+      }
+    }
+    .container {
+      background-color: #ccc;
+      padding: 5px;
+      margin: 0;
+    }
+    .container > div {
+      padding: 15px;
+      margin: 5px;
+      min-height: 20px;
+      background-color: inherit !important;
+    }
+    
+    .vertical-section-container {
+      max-width: 900px
+    }
+    
+  </style>
+
+</head>
+<body unresolved class="fullbleed">
+  
+  <div class="vertical-section-container centered">
+
+    <h1>Layout classes</h1>
+
+    <h4>Horizontal and vertical layout</h4>
+    <at-doc-snippet>
+      <template>        
+        <div class="container layout-horizontal">
+          <div>one</div>
+          <div>two</div>
+          <div>three</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Flexible children</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal">
+          <div>one</div>
+          <div class="layout-flex">two</div>
+          <div>three</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Flexible children in vertical layouts</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-vertical" style="height:240px">
+          <div>one</div>
+          <div class="layout-flex">two (flex)</div>
+          <div>three</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Flex ratios</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal">
+          <div class="layout-flex">one</div>
+          <div class="layout-flex-2">two</div>
+          <div class="layout-flex-3">three</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Cross-axis stretch alignment (default)</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal" style="height:120px">
+          <div>stretch</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Cross-axis center alignment</h4>
+    <at-doc-snippet>
+      <template>
+        <style is="custom-style">
+          .flex-center-align {
+            @apply(--layout-horizontal);
+            @apply(--layout-center);
+            height: 120px;
+          }
+        </style>
+
+        <div class="container layout-horizontal layout-center"  style="height:120px">
+          <div>center</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Cross-axis start alignment</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal layout-start"  style="height:120px">
+          <div>start</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Cross-axis end alignment</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal layout-end"  style="height:120px">
+          <div>end</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Justification, start justified</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal layout-start-justified"  style="height:120px">
+          <div>start-justified</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Justification, center justified</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal layout-center-justified">
+          <div>center-justified</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Justification, end justified</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal layout-end-justified">
+          <div>end-justified</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Justification, equal space between elements</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal layout-justified">
+          <div>justified</div>
+          <div>justified</div>
+          <div>justified</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Justification, equal space around each element</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal layout-around-justified">
+          <div>around-justified</div>
+          <div>around-justified</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Self alignment</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal layout-justified" style="height:120px">
+          <div class="layout-flex layout-self-start">one</div>
+          <div class="layout-flex layout-self-center">two</div>
+          <div class="layout-flex layout-self-end">three</div>
+          <div class="layout-flex layout-self-stretch">four</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Wrapping</h4>
+    <at-doc-snippet>
+      <template>
+        <style is="custom-style">
+          .flex-wrap {
+            @apply(--layout-horizontal);
+            @apply(--layout-wrap);
+            width: 200px;
+          }
+        </style>
+
+        <div class="container layout-horizontal layout-wrap" style="width:200px">
+          <div>one</div>
+          <div>two</div>
+          <div>three</div>
+          <div>four</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>Reversed layouts</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal-reverse">
+          <div>one</div>
+          <div>two</div>
+          <div>three</div>
+          <div>four</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+    <h4>General purpose rules</h4>
+    <at-doc-snippet>
+      <template>
+        <style is="custom-style">
+          .general {
+            width: 100%;
+          }
+          .general > div {
+            background-color: #ccc;
+            padding: 4px;
+            margin: 12px;
+          }
+          .block {
+            @apply(--layout-block);
+          }
+          .invisible {
+            @apply(--layout-invisible);
+          }
+          .relative {
+            @apply(--layout-relative);
+          }
+          .fit {
+            @apply(--layout-fit);
+          }
+        </style>
+
+        <div class="general">
+          <div>Before <span>[A Span]</span> After</div>
+          <div>Before <span class="block">[A Block Span]</span> After</div>
+          <div>Before invisible span <span class="invisible">Not displayed</span> After invisible span</div>
+          <div class="relative" style="height: 100px;">
+            <div class="fit" style="background-color: #000;color: white">Fit</div>
+          </div>
+        </div>
+      </template>
+    </at-doc-snippet>
+  </div>
+</body>
+</html>

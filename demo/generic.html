@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html>
+<head>
+
+  <title>at-core-style classes demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../tangere/tangere.html">
+  <link rel="import" href="../../paper-styles/demo-pages.html">
+  <link rel="import" href="../../at-doc-snippet/at-doc-snippet.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">  
+
+  <style is="custom-style" include="demo-pages-shared-styles">
+    at-doc-snippet {
+      --at-doc-snippet-demo: {
+        padding: 0;
+      }
+    }
+    .container {
+      background-color: #ccc;
+      padding: 5px;
+      margin: 0;
+    }
+    .container > div {
+      padding: 15px;
+      margin: 5px;
+      background-color: white;
+      min-height: 20px;
+    }
+
+    .vertical-section-container {
+      max-width: 900px
+    }
+    
+  </style>
+
+</head>
+<body unresolved class="fullbleed">
+
+  <div class="vertical-section-container centered">
+
+    <h1>Generic classes</h1>
+
+    <h4>Selectable and unselectable text</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="container layout-horizontal">
+          <div class="unselectable">this text cannot be selected</div>
+          <div class="selectable">this can be selected</div>
+        </div>
+      </template>
+    </at-doc-snippet>
+
+
+  </div>
+</body>
+</html>
