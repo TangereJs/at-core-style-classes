@@ -1,9 +1,9 @@
 {
   "name": "at-core-style-classes",
-  "version": "0.8.0",
-  "description": "Provide flexbox-based layouts and common styles",  
-  "main": "iron-flex-layout.html",
-  "private": true, 
+  "version": "0.8.0.21",
+  "description": "Provide common styles and flexbox-based layouts",
+  "main": "at-core-style-classes.html",
+  "private": true,
   "dependencies": {
     "polymer": "Polymer/polymer#^1.1.0"
   },
@@ -11,6 +11,5 @@
     "test-fixture": "PolymerElements/test-fixture#^1.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
     "web-component-tester": "^4.0.0"
-  },
-  "ignore": []
+  }
 }
