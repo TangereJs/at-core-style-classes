@@ -454,6 +454,197 @@
 
         /* #endregion */
 
+
+        /* #redion padding */
+
+        .m0  { margin:        0 }
+        .mt0 { margin-top:    0 }
+        .mr0 { margin-right:  0 }
+        .mb0 { margin-bottom: 0 }
+        .ml0 { margin-left:   0 }
+        .mx0 { margin-left:   0; margin-right:  0 }
+        .my0 { margin-top:    0; margin-bottom: 0 }
+
+        .m  { margin:        16px }
+        .mt { margin-top:    16px }
+        .mr { margin-right:  16px }
+        .mb { margin-bottom: 16px }
+        .ml { margin-left:   16px }
+        .mx { margin-left:   16px; margin-right:  16px }
+        .my { margin-top:    16px; margin-bottom: 16px }
+
+        .msm  { margin:        8px }
+        .mtsm { margin-top:    8px }
+        .mrsm { margin-right:  8px }
+        .mbsm { margin-bottom: 8px }
+        .mlsm { margin-left:   8px }
+        .mxsm { margin-left:   8px; margin-right:  8px }
+        .mysm { margin-top:    8px; margin-bottom: 8px }
+
+
+        .mlg  { margin:        24px }
+        .mtlg { margin-top:    24px }
+        .mrlg { margin-right:  24px }
+        .mblg { margin-bottom: 24px }
+        .mllg { margin-left:   24px }
+        .mxlg { margin-left:   24px; margin-right:  24px }
+        .mylg { margin-top:    24px; margin-bottom: 24px }
+
+        /* #endregion */
+
+
+        /* #region Typography */
+
+        .font-display4,
+        .font-display3,
+        .font-display2,
+        .font-display1,
+        .font-headline,
+        .font-title,
+        .font-subhead,
+        .font-body2,
+        .font-body1,
+        .font-caption,
+        .font-menu,
+        .font-button {
+          @apply(--paper-font-common-base);
+          color: var(--primary-text-color);
+          -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+        }
+
+        .font-code2,
+        .font-code1 {
+          font-family: 'Roboto Mono', 'Consolas', 'Menlo', monospace;
+           color: var(--primary-text-color);
+          -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+        }
+
+        /* Opt for better kerning for headers & other short labels. */
+        .font-display4,
+        .font-display3,
+        .font-display2,
+        .font-display1,
+        .font-headline,
+        .font-title,
+        .font-subhead,
+        .font-menu,
+        .font-button {
+          text-rendering: optimizeLegibility;
+        }
+
+        /*
+        "Line wrapping only applies to Body, Subhead, Headline, and the smaller Display
+        styles. All other styles should exist as single lines."
+        */
+        .font-display4,
+        .font-display3,
+        .font-title,
+        .font-caption,
+        .font-menu,
+        .font-button {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .font-display4 {
+          font-size: 112px;
+          font-weight: 300;
+          letter-spacing: -.044em;
+          line-height: 120px;
+        }
+
+        .font-display3 {
+          font-size: 56px;
+          font-weight: 400;
+          letter-spacing: -.026em;
+          line-height: 60px;
+        }
+
+        .font-display2 {
+          font-size: 45px;
+          font-weight: 400;
+          letter-spacing: -.018em;
+          line-height: 48px;
+        }
+
+        .font-display1 {
+          font-size: 34px;
+          font-weight: 400;
+          letter-spacing: -.01em;
+          line-height: 40px;
+        }
+
+        .font-headline {
+          font-size: 24px;
+          font-weight: 400;
+          letter-spacing: -.012em;
+          line-height: 32px;
+        }
+
+        .font-title {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 28px;
+        }
+
+        .font-subhead {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+
+        .font-body2 {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+
+        .font-body1 {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+
+        .font-caption {
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.011em;
+          line-height: 20px;
+        }
+
+        .font-menu {
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+
+        .font-button {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.018em;
+          line-height: 24px;
+          text-transform: uppercase;
+        }
+
+        .font-code2 {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+        }
+
+        .font-code1 {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+        }
+
+        .secondary-opacity {
+          opacity: var(--at-secondary-opacity);
+        }
+
+        /* #endregion */
+
     </style>
   </template>
 </dom-module>
