@@ -5,11 +5,11 @@
   "main": "iron-flex-layout.html",
   "private": true,
   "dependencies": {
-    "tangere": "TangereJs/tangere#0.8-preview",
-    "at-theme": "TangereJs/at-theme#0.8-preview",
+    "tangere": "TangereJs/tangere#master",
+    "at-theme": "TangereJs/at-theme#master",
     "iron-flex-layout": "PolymerElements/iron-flex-layout#master",
     "paper-styles": "PolymerElements/paper-styles#master",
-    "at-doc-snippet": "TangereJs/at-doc-snippet#0.8-preview",
+    "at-doc-snippet": "TangereJs/at-doc-snippet#master",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#master",
   },
   "devDependencies": {
