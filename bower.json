@@ -10,7 +10,7 @@
     "iron-flex-layout": "PolymerElements/iron-flex-layout#master",
     "paper-styles": "PolymerElements/paper-styles#master",
     "at-doc-snippet": "TangereJs/at-doc-snippet#master",
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#master",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#master"
   },
   "devDependencies": {
     "test-fixture": "PolymerElements/test-fixture#^1.0.0",
