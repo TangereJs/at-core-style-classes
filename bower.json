@@ -8,7 +8,7 @@
     "tangere": "TangereJs/tangere#0.8-preview",
     "at-theme": "TangereJs/at-theme#0.8-preview",
     "iron-flex-layout": "PolymerElements/iron-flex-layout#master",
-    "paper-styles": "PolymerElements/paper-styles#master",
+    "paper-styles": "TangereJs/paper-styles#0.8-preview",
     "at-doc-snippet": "TangereJs/at-doc-snippet#0.8-preview",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#master"
   },
