@@ -734,6 +734,38 @@
 
         /* #endregion */ 
 
+
+        /* #region Placeholder */
+        
+
+          @keyframes placeHolderShimmer{
+          0%{
+           opacity: .5;
+          }
+          25%{
+           opacity: .25;
+          }
+          50% {
+           opacity: 1;
+          }
+          75% {
+           opacity: .25;
+          }
+          100% {
+            opacity: .5;
+           }
+          }
+          .placeholder, .placeholder-text {
+              animation: placeHolderShimmer 3s infinite cubic-bezier(.65, .05, .36, 1);
+              background-color: lightgrey;            
+          }
+
+          .placeholder-text {
+            height: 14px;
+          }
+
+        /* #endregion */ 
+
     </style>
   </template>
 </dom-module>
