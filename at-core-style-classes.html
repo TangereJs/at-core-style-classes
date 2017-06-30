@@ -286,6 +286,21 @@
         }
 
         /* #endregion */
+      
+      
+        /* #region Theme */
+    
+        .primiary {
+          color: var(--at-primiary) !important;         
+        }
+      
+        .secondary {
+          color: var(--at-secondary) !important;         
+        }
+      
+        /* #endregion */
+      
+      
 
         /* #region Colors */
 
@@ -573,164 +588,162 @@
 
         /* #region Typography */
 
-        .font-display4,
-        .font-display3,
-        .font-display2,
-        .font-display1,
-        .font-headline,
-        .font-title,
-        .font-subhead,
-        .font-body2,
-        .font-body1,
-        .font-caption,
-        .font-menu,
-        .font-button {
-          @apply(--paper-font-common-base);
-          color: var(--primary-text-color);
-          -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
-        }
-
-        .font-code2,
-        .font-code1 {
-          font-family: 'Roboto Mono', 'Consolas', 'Menlo', monospace;
-           color: var(--primary-text-color);
-          -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
-        }
-
-        /* Opt for better kerning for headers & other short labels. */
-        .font-display4,
-        .font-display3,
-        .font-display2,
-        .font-display1,
-        .font-headline,
-        .font-title,
-        .font-subhead,
-        .font-menu,
-        .font-button {
-          text-rendering: optimizeLegibility;
-        }
-
-        /*
-        "Line wrapping only applies to Body, Subhead, Headline, and the smaller Display
-        styles. All other styles should exist as single lines."
-        */
-        .font-display4,
-        .font-display3,
-        .font-title,
-        .font-caption,
-        .font-menu,
-        .font-button {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-
         .font-display4 {
-          font-size: 112px;
-          font-weight: 300;
-          letter-spacing: -.044em;
-          line-height: 120px;
+          @apply(--paper-font-display4);
         }
 
         .font-display3 {
-          font-size: 56px;
-          font-weight: 400;
-          letter-spacing: -.026em;
-          line-height: 60px;
+          @apply(--paper-font-display3);
         }
 
         .font-display2 {
-          font-size: 45px;
-          font-weight: 400;
-          letter-spacing: -.018em;
-          line-height: 48px;
+          @apply(--paper-font-display2);
         }
 
         .font-display1 {
-          font-size: 34px;
-          font-weight: 400;
-          letter-spacing: -.01em;
-          line-height: 40px;
+          @apply(--paper-font-display1);
         }
 
         .font-headline {
-          font-size: 24px;
-          font-weight: 400;
-          letter-spacing: -.012em;
-          line-height: 32px;
+          @apply(--paper-font-headline);
         }
 
         .font-title {
-          font-size: 20px;
-          font-weight: 500;
-          line-height: 28px;
+          @apply(--paper-font-title);
         }
 
         .font-subhead {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
+          @apply(--paper-font-subhead);
         }
 
         .font-body2 {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 24px;
+          @apply(--paper-font-body2);
         }
 
         .font-body1 {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 20px;
+          @apply(--paper-font-body1);
         }
 
         .font-caption {
-          font-size: 12px;
-          font-weight: 400;
-          letter-spacing: 0.011em;
-          line-height: 20px;
+          @apply(--paper-font-caption);
         }
 
         .font-menu {
-          font-size: 13px;
-          font-weight: 500;
-          line-height: 24px;
+          @apply(--paper-font-menu);
+        }
+      
+        .font-small {
+          @apply(--paper-font-small);
         }
 
         .font-button {
-          font-size: 14px;
-          font-weight: 500;
-          letter-spacing: 0.018em;
-          line-height: 24px;
-          text-transform: uppercase;
+          @apply(--paper-font-button);
         }
 
         .font-code2 {
-          font-size: 14px;
-          font-weight: 700;
-          line-height: 20px;
+          @apply(--paper-font-code2);
         }
 
         .font-code1 {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 20px;
+          @apply(--paper-font-code1);
         }
 
+      
+        /* mobile fonts */
+      
+        @media only screen and (max-width: 800px) {
+
+          .font-display4 {
+            @apply(--paper-font-display4-mobile);
+          }
+          
+          .font-display3 {
+            @apply(--paper-font-display3-mobile);
+          }
+          
+          .font-display2 {
+            @apply(--paper-font-display2-mobile);
+          }
+          
+          .font-display1 {
+            @apply(--paper-font-display1-mobile);
+          }     
+
+          .font-headline {
+            @apply(--paper-font-headline-mobile);
+          }
+          
+          .font-subhead {
+            @apply(--paper-font-subhead-mobile);
+          }
+          
+         .font-body1 {
+            @apply(--paper-font-body1-mobile);
+          }
+          
+        }
+
+      
+        .font-bold {
+          font-weight: bold;
+        }
+      
+        .font-bolder {
+          font-weight: bolder;
+        }
+
+        .font-regular {
+          font-weight: 400;
+        }
+
+        .font-light {
+          font-weight: 300;
+        }
+
+        .font-extralight {
+          font-weight: 200;
+        }
+      
+        .font-italic {
+          font-style: italic;
+        }
+
+        .font-underline {
+          text-decoration: underline;        
+        }
+      
+      
         .secondary-opacity {
           opacity: var(--at-secondary-opacity);
         }
 
-        .primary, .color-primary {
-          color: var(--primary-text-color);
+        .text-primiary {
+          color: var(--at-text-primary);
+          opacity: var(--at-primiary-opacity);
         }
 
-        .secondary, .color-secondary {
-          color: var(--secondary-text-color);
+        .text-secondary {
+          color: var(--at-text-primary);
+          opacity: var(--at-secondary-opacity);
         }
+      
+        .text-disabled {
+          color: var(--at-text-primary);
+          opacity: var(--at-disabled-opacity);
+        }
+      
+        .text-divider {
+          color: var(--at-text-primary);
+          opacity: var(--at-divider-opacity);
+        }
+
 
         .disabled, .color-disabled {
           color: var(--disabled-text-color);
+        }
+      
+        .divider, .color-divider {
+          color: var(--at-divider);
         }
       
         .action, .color-action {

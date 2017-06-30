@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>at-core-style classes demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../tangere/tangere.html">
+  <link rel="import" href="../../paper-styles/demo-pages.html">
+  <link rel="import" href="../../at-doc-snippet/at-doc-snippet.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+
+  <style include="demo-pages-shared-styles"></style>
+
+  <style>
+    .snippet {
+      background-color: #ccc;
+      padding: 5px;
+      margin: 0;
+    }
+
+      .snippet > div {
+        padding: 15px;
+        margin: 0px;
+        min-height: 20px;
+      }
+
+    .vertical-section-container {
+      max-width: 900px !important;
+    }
+  </style>
+
+</head>
+<body unresolved class="fullbleed">
+
+  <div class="vertical-section-container centered">
+
+    <h4>Fonts</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="snippet layout-vertical">
+          <div class="font-display4">font-display4</div>
+          <div class="font-display3">font-display3</div>
+          <div class="font-display2">font-display2</div>
+          <div class="font-display1">font-display1</div>
+          <div class="font-headline">font-headline</div>
+          <div class="font-title">font-title</div>
+          <div class="font-subhead">font-subhead</div>
+          <div class="font-body2">font-body2</div>
+          <div class="font-body1">font-body1</div>
+          <div class="font-caption">font-caption</div>
+          <div class="font-small">font-small</div>
+          <div class="font-menu">font-menu</div>
+          <div class="font-button">font-button</div>
+        </div>      
+      
+      </template>
+    </at-doc-snippet>
+
+    <h4>Font Weights</h4>
+    <at-doc-snippet>
+      <template>
+        <div class="snippet layout-vertical">
+          <div class="font-bold">font-bold</div>
+          <div class="font-bolder">font-bolder</div>
+          <div class="font-regular">font-regular</div>
+          <div class="font-light">font-light</div>
+          <div class="font-extralight">font-extralight</div> 
+          <div class="font-underline">font-underline</div> 
+          <div class="font-italic">font-italic</div> 
+        </div>      
+      
+      </template>
+    </at-doc-snippet>
+
+  </div>
+</body>
+</html>
