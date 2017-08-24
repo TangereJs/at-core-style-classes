@@ -10,7 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 <html>
   <head>
-    <title>iron-flex-layout-classes tests</title>
+    <title>at-core-style-classes tests</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -18,7 +18,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <script src="../../webcomponentsjs/webcomponents.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
-    <link rel="import" href="../iron-flex-layout-classes.html">
+    <link rel="import" href="../at-core-style-classes.html">
 
     <style is="custom-style" include="iron-flex iron-flex-reverse iron-flex-factors iron-flex-alignment iron-positioning">
       body {
@@ -315,81 +315,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           assert.isTrue(positionEquals(c2, 0, 50, end + spacing, end + spacing + 50), "child 2 position ok");
           end = end + spacing + 50 + spacing;
           assert.isTrue(positionEquals(c3, 0, 50, end + spacing, end + spacing + 50), "child 3 position ok");
-        });
-      });
-
-      suite('align-content', function() {
-        var container;
-
-        setup(function() {
-          container = fixture('align-content');
-          container.classList.add('small');
-          container.classList.add('tall');
-          container.classList.add('horizontal');
-          container.classList.add('flex');
-          container.classList.add('wrap');
-        });
-
-        test('default is stretch', function() {
-          assert.isTrue(positionEquals(container, 0, 300, 0, 120), "container position ok");
-          assert.isTrue(positionEquals(c1, 0, 100, 0, 50), "child 1 position ok");
-          assert.isTrue(positionEquals(c2, 0, 100, 50, 100), "child 2 position ok");
-          assert.isTrue(positionEquals(c3, 100, 200, 0, 50), "child 3 position ok");
-          assert.isTrue(positionEquals(c4, 100, 200, 50, 100), "child 4 position ok");
-          assert.isTrue(positionEquals(c5, 200, 300, 0, 50), "child 5 position ok");
-        });
-
-        test('layout-start-aligned', function() {
-          container.classList.add('start-aligned');
-          assert.isTrue(positionEquals(container, 0, 300, 0, 120), "container position ok");
-          assert.isTrue(positionEquals(c1, 0, 50, 0, 50), "child 1 position ok");
-          assert.isTrue(positionEquals(c2, 0, 50, 50, 100), "child 2 position ok");
-          assert.isTrue(positionEquals(c3, 50, 100, 0, 50), "child 3 position ok");
-          assert.isTrue(positionEquals(c4, 50, 100, 50, 100), "child 4 position ok");
-          assert.isTrue(positionEquals(c5, 100, 150, 0, 50), "child 5 position ok");
-        });
-
-        test('layout-end-aligned', function() {
-          container.classList.add('end-aligned');
-          assert.isTrue(positionEquals(container, 0, 300, 0, 120), "container position ok");
-          assert.isTrue(positionEquals(c1, 150, 200, 0, 50), "child 1 position ok");
-          assert.isTrue(positionEquals(c2, 150, 200, 50, 100), "child 2 position ok");
-          assert.isTrue(positionEquals(c3, 200, 250, 0, 50), "child 3 position ok");
-          assert.isTrue(positionEquals(c4, 200, 250, 50, 100), "child 4 position ok");
-          assert.isTrue(positionEquals(c5, 250, 300, 0, 50), "child 5 position ok");
-        });
-
-        test('layout-center-aligned', function() {
-          container.classList.add('center-aligned');
-          assert.isTrue(positionEquals(container, 0, 300, 0, 120), "container position ok");
-          var center = (300 - 50) / 2;
-          assert.isTrue(positionEquals(c1, center-50, center, 0, 50), "child 1 position ok");
-          assert.isTrue(positionEquals(c2, center-50, center, 50, 100), "child 2 position ok");
-          assert.isTrue(positionEquals(c3, center, center+50, 0, 50), "child 3 position ok");
-          assert.isTrue(positionEquals(c4, center, center+50, 50, 100), "child 4 position ok");
-          assert.isTrue(positionEquals(c5, center+50, center+100, 0, 50), "child 5 position ok");
-        });
-
-        test('layout-between-aligned', function() {
-          container.classList.add('between-aligned');
-          assert.isTrue(positionEquals(container, 0, 300, 0, 120), "container position ok");
-          var center = (300 - 50) / 2;
-          assert.isTrue(positionEquals(c1, 0, 50, 0, 50), "child 1 position ok");
-          assert.isTrue(positionEquals(c2, 0, 50, 50, 100), "child 2 position ok");
-          assert.isTrue(positionEquals(c3, center, center+50, 0, 50), "child 3 position ok");
-          assert.isTrue(positionEquals(c4, center, center+50, 50, 100), "child 4 position ok");
-          assert.isTrue(positionEquals(c5, 250, 300, 0, 50), "child 5 position ok");
-        });
-
-        test('layout-around-aligned', function() {
-          container.classList.add('around-aligned');
-          assert.isTrue(positionEquals(container, 0, 300, 0, 120), "container position ok");
-          var center = (300 - 50) / 2;
-          assert.isTrue(positionEquals(c1, 25, 75, 0, 50), "child 1 position ok");
-          assert.isTrue(positionEquals(c2, 25, 75, 50, 100), "child 2 position ok");
-          assert.isTrue(positionEquals(c3, center, center+50, 0, 50), "child 3 position ok");
-          assert.isTrue(positionEquals(c4, center, center+50, 50, 100), "child 4 position ok");
-          assert.isTrue(positionEquals(c5, 225, 275, 0, 50), "child 5 position ok");
         });
       });
 
