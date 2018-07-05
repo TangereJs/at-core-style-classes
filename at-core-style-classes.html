@@ -67,6 +67,10 @@
           @apply(--layout-horizontal-reverse);
         }
 
+        .layout-horizontal > *, .layout-horizontal-reverse > * {
+          min-width: 0;
+        }
+
         .layout-vertical {
           @apply(--layout-vertical);
         }
