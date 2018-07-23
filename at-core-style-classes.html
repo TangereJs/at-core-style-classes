@@ -754,7 +754,12 @@
         }
       
         .action, .color-action {
-          color: var(--at-blue) !important;
+          color: var(--at-action-color) !important;
+          cursor: pointer;
+        }
+      
+        .action:hover, .color-action:hover, .action-link:hover {
+          color: var(--at-action-color-hover) !important;
           cursor: pointer;
         }
 
