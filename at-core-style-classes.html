@@ -783,9 +783,25 @@
           line-height: 24px;
           text-transform: uppercase;
         }
+
+        .list-item:hover {
+          background-color: var( --at-list-hover-background-color);
+        }
             
+        .reveal-item {
+          display: none;
+        }
+
+        .mobile .reveal-item {
+          display: block;
+        }
+
+        .reveal-container:hover .reveal-item {
+          display: block;
+        }
+
         .cursor-pointer {
-               cursor: pointer;
+          cursor: pointer;
         }
 
 
@@ -822,6 +838,7 @@
             opacity: .5;
            }
           }
+
           .placeholder, .placeholder-text {
               animation: placeHolderShimmer 3s infinite cubic-bezier(.65, .05, .36, 1);
               background-color: lightgrey;            
