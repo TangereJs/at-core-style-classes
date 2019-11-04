@@ -413,6 +413,13 @@
           color: var(--at-light-grey) !important;          
         }
 
+
+        .background-transparent {
+          background-color: transparent;
+          color: var(--at-text-color);
+        }
+
+
         .background-blue {
           background-color: var(--at-blue);
           color: var(--at-background-text-color);
@@ -785,7 +792,7 @@
         }
 
         .list-item:hover {
-          background-color: var( --at-list-hover-background-color);
+          background-color: var(--at-list-hover-background-color);
         }
             
         .reveal-item {
@@ -804,6 +811,9 @@
           cursor: pointer;
         }
 
+        .selected, .unread {
+          background-color: var(--at-selected-background-color);
+        }
 
 
         /* #endregion */
