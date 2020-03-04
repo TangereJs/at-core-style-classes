@@ -1,6 +1,6 @@
 {
   "name": "at-core-style-classes",
-  "version": "0.8.0.91",
+  "version": "0.8.0.95",
   "description": "Provide flexbox-based layouts and common styles",
   "main": "iron-flex-layout.html",
   "private": true,

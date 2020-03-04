@@ -861,21 +861,24 @@
         /* #endregion */ 
 
     /* #region box-plain, box-card (replacement for at-core-card) */
-    .box-plain {
-      background-color: #fff;
-      border-radius: 2px;
-      box-shadow: transparent 0px 2px 4px, transparent 0px 0px 3px;         
-      -webkit-transition: all 0.20s ease-out;
-      transition: all 0.20s ease-out;
-    }
+      .box-plain {
+        background: var(--at-card-background);
+        border-radius: 2px;
+        box-shadow: transparent 0px 2px 4px, transparent 0px 0px 3px;
+        -webkit-transition: all 0.20s ease-out;
+        transition: all 0.20s ease-out;
+      }
 
-    .box-card {
-      background-color: #fff;
-      box-shadow: rgba(0, 0, 0, 0.098) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 0px 3px;
-      border-radius: 0px;      
-      -webkit-transition: all 0.20s ease-out;
-      transition: all 0.20s ease-out;
-    }
+      .box-card {
+        border: var(--at-card-border);
+        margin: var(--at-card-margin);
+        padding: var(--at-card-padding);
+        background: var(--at-card-background);
+        box-shadow: var(--at-card-box-shadow);
+        border-radius: var(--at-card-border-radius);
+        -webkit-transition: all 0.20s ease-out;
+        transition: all 0.20s ease-out;
+      }
     /* #endregion */
 
     .circle {
